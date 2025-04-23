@@ -3,26 +3,6 @@
 
 This project predicts ideal player movement paths in football (soccer) matches based on player tracking data. It overlays both player trails and model-suggested trajectories onto a video and logs predictions for analysis.
 
-### 📹 How Visualization Works
-
-The system reads the raw player tracking data and overlays both:
-
-- Actual **player movement trails** (from past positions)
-- Model-predicted **ideal movement targets**
-- Optional **Bezier-curved trails** for smoother, tactical visualization
-
-This acts as a basic form of **optical tactical projection**, simulating where a player should move next based on spatial and motion patterns learned by the neural network.
-
-It helps:
-- Analyze player positioning
-- Visualize movement intelligence
-- Detect tactical misalignment in real-time or replay
-
-The predictions are visualized as:
-- 🟡 Yellow dot: current player position
-- 🔵 Blue dot: model-predicted position
-- 🟢 Green line: movement suggestion
-- 💜 Purple Bezier trail: smooth path history toward target
 
 ## 📁 Project Structure
 
@@ -51,6 +31,26 @@ The predictions are visualized as:
 - Exports a CSV for further analysis of model performance.
 
 ---
+### 📹 How Visualization Works
+
+The system reads the raw player tracking data and overlays both:
+
+- Actual **player movement trails** (from past positions)
+- Model-predicted **ideal movement targets**
+- Optional **Bezier-curved trails** for smoother, tactical visualization
+
+This acts as a basic form of **optical tactical projection**, simulating where a player should move next based on spatial and motion patterns learned by the neural network.
+
+It helps:
+- Analyze player positioning
+- Visualize movement intelligence
+- Detect tactical misalignment in real-time or replay
+
+The predictions are visualized as:
+- 🟡 Yellow dot: current player position
+- 🔵 Blue dot: model-predicted position
+- 🟢 Green line: movement suggestion
+- 💜 Purple Bezier trail: smooth path history toward target
 
 ## 🛠 Requirements
 
